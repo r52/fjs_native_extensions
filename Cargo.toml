@@ -1,0 +1,9 @@
+[package]
+name = "fjs_native_extensions"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+
+[dependencies]
+linkme = "0.3"
+rquickjs = { git = "https://github.com/DelSkayn/rquickjs.git", rev = "2e98651deac9d7e1746b5d9dfbed1cdf5cf268c4", version = "0.11.0", features = ["full-async", "bindgen", "loader", "dyn-load", "parallel", "macro", "futures"] }
